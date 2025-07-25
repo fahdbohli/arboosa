@@ -1,0 +1,15 @@
+services:
+  - type: worker
+    name: arbitrage-scheduler
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python scheduler.py
+    envVars:
+      - key: PYTHONPATH
+        value: /opt/render/project/src
+      - key: PYTHONUNBUFFERED
+        value: "1"
+    disk:
+      name: arbitrage-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1

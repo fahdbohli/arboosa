@@ -1,0 +1,24 @@
+{
+  "OUTPUT_DIRECTORY": "./output/ev_output",
+
+  "METHOD": "ONE_SHARPING",
+  "method_description": "METHOD (ONE_SHARPING or MULTIPLE_SHARPING)",
+
+  "SHARP_SOURCE": "Clubx2",
+
+  "SHARPING_GROUP": ["Clubx2"],
+
+  "EV_SOURCE": "Tounesbet",
+
+  "ODDS_INTERVAL": [1.1, 3.0],
+
+  "MIN_OVERPRICE": 0.15,
+
+  "OVERPRICE_SOURCE_LOGGING": true,
+
+  "APPEARANCE_INVESTIGATION": true,
+  "method_description_2": "If true, attempts to determine the overprice source when an opportunity first appears.",
+
+  "DOUBLE_CHECK": false,
+  "method_description_3": "If true, the disappearance method will re-investigate opportunities already analyzed by the appearance method."
+}

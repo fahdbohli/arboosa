@@ -1,0 +1,24 @@
+{
+  "scraping_frequency_minutes": 5,
+  "scrapers": [
+    {
+      "name": "tounesbet",
+      "script_path": "scrapers/TounesBet Scraper/tounesbet_prematch_v2.py",
+      "args": ["--sport", "football", "--scrapecountry"],
+      "timeout_minutes": 10
+    },
+    {
+      "name": "clubx2",
+      "script_path": "scrapers/Clubx2 scraper/clubx2_scraper.py",
+      "args": ["--sport", "football", "--mode", "prematch"],
+      "timeout_minutes": 10
+    }
+  ],
+  "arbitrage_checker": {
+    "script_path": "main.py",
+    "args": ["--sport", "football", "--mode", "prematch", "--check", "arb"],
+    "delay_after_scrapers_seconds": 30
+  },
+  "sports": ["football", "tennis"],
+  "modes": ["prematch", "live"]
+}

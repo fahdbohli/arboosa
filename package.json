@@ -1,0 +1,14 @@
+{
+  "name": "arbitrage-betting-system",
+  "version": "1.0.0",
+  "description": "Automated arbitrage betting system with scrapers and analysis",
+  "main": "scheduler.py",
+  "scripts": {
+    "start": "python scheduler.py",
+    "health": "python health_check.py",
+    "test": "python -m pytest tests/ -v"
+  },
+  "keywords": ["arbitrage", "betting", "scraping", "automation"],
+  "author": "Your Name",
+  "license": "MIT"
+}
